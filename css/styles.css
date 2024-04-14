@@ -1,0 +1,135 @@
+:root {
+    --bleu_ocean: #6FA9CC;
+    --gris: #A9A9A8;
+    --marine: #122245;
+    --blanc: #ffffff;
+    --orange: #C26C18;
+    --vert: #7BBA3E;
+    --jaune: #D7AC4F;
+    --mauve: #B194FD;
+  }
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* ----- Header ------ */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/sable.png), url(/img/img_arriere_plan/eau_ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    top: 0;
+    font-size: 10vw;
+    padding: 3% 10px;
+    text-align: center;
+    color: var(--marine)
+}
+
+.icone {
+    width: 10%;
+    padding-bottom: 4%;
+}
+
+.header-bas-page {
+    position: relative;
+    top: 60%;
+}
+
+.texte-defilez {
+    padding-bottom: 4%;
+}
+/* ----- Main ------ */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    border: 1px solid red
+}
+
+#chapitre-01 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/espace_etoiles.svg);
+}
+
+#chapitre-02 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/parallax_degrade.svg);
+}
+
+#chapitre-03 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/sable.png), url(/img/img_arriere_plan/eau_ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#chapitre-04 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#chapitre-05 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#chapitre-06 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#chapitre-07 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#chapitre-08 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/espace_etoiles.svg);
+}
+/* ---- Footer -----*/
+
+.texte-footer{
+    font-size: 10px;
+    text-align: center;
+    color: var(--marine);
+}
+
+/* ---- Page HTML sprite sheets ---- */
+.body-sprite-sheets {
+    height: 300vh;
+}
