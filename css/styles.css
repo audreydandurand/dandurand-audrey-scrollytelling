@@ -134,9 +134,7 @@ section {
     height: 300vh;
 }
 
-.sprite-sheets {
-    /*width: 507.4px;
-    height: 500px;*/
+.sprite-sheets-poisson {
     width: 50vw;
     aspect-ratio: 1/1;
     background-image: url(/img/img_personnages/spritesheet_poisson.png);
@@ -148,11 +146,32 @@ section {
     animation-play-state: paused;
 }
 
-.body-sprite-sheets.is-scrolling .sprite-sheets {
+.body-sprite-sheets.is-scrolling .sprite-sheets-poisson {
     animation-play-state: running;
 }
 
 @keyframes poisson {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+  }
+
+  .sprite-sheets-plante {
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-image: url(/img/img_personnages/spritesheet_plante.png);
+    background-size: 2300% 100%;
+    animation-name: plante;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(23);
+    animation-play-state: paused;
+}
+
+.body-sprite-sheets.is-scrolling .sprite-sheets-plante {
+    animation-play-state: running;
+}
+
+@keyframes plante {
     from { background-position: 0 0; }
     to { background-position: -100% 0; }
   }
