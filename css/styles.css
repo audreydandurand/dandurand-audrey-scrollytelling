@@ -133,3 +133,26 @@ section {
 .body-sprite-sheets {
     height: 300vh;
 }
+
+.sprite-sheets {
+    /*width: 507.4px;
+    height: 500px;*/
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-image: url(/img/img_personnages/spritesheet_test.png);
+    background-size: 7100% 100%;
+    animation-name: poisson;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(71);
+    animation-play-state: paused;
+}
+
+.body-sprite-sheets.is-scrolling .sprite-sheets {
+    animation-play-state: running;
+}
+
+@keyframes poisson {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+  }
