@@ -139,7 +139,7 @@ section {
     height: 500px;*/
     width: 50vw;
     aspect-ratio: 1/1;
-    background-image: url(/img/img_personnages/spritesheet_test.png);
+    background-image: url(/img/img_personnages/spritesheet_poisson.png);
     background-size: 7100% 100%;
     animation-name: poisson;
     animation-duration: 3s;
