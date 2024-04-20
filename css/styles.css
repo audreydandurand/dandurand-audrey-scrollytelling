@@ -59,19 +59,86 @@ section {
     border: 1px solid red
 }
 
+img { border: 1px solid rgba(218, 0, 0, 0.5); }
+
+/* ----- Chapitre 01 ------ */
+
 #chapitre-01 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/espace.svg);
 }
 
+.cercle-grand {
+    position: absolute;
+    width: 20vw; 
+}
+
+.cercle-grand-01-morphing {
+    top: 10vh;
+}
+
+.cercle-grand-02-morphing{
+    top: 30vh;
+    left: 60vw;
+}
+
+.cercle-petit {
+    position: absolute;
+    width: 5vw;
+}
+
+.cercle-petit-01-morphing {
+    top: 20vh;
+    left: 50vw;
+}
+
+.cercle-petit-02-morphing {
+    top: 80vh;
+    left: 30vw;
+}
+
+.cercle-petit-03-morphing {
+    top: 70vh;
+    left: 90vw;
+}
+
+.cercle-moyen {
+    position: absolute;
+    width: 10vw;
+}
+
+.cercle-moyen-01-morphing {
+    top: 65vh;
+    left: 40vw;
+}
+
+
+#chapitre-01 .chat-orange {
+    position: absolute;
+    top: 50vh;
+    left: 70vw;
+}
+
+.planete {
+    position: absolute;
+    width: 30vw;
+    top: 25vh;
+    right: 35vw;
+}
+
+/* ----- Chapitre 02 ------ */
+
 #chapitre-02 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/parallax_degrade.svg);
 }
 
 #chapitre-03 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/sable.png), url(/img/img_arriere_plan/eau_ocean.png);
@@ -81,6 +148,7 @@ section {
 }
 
 #chapitre-04 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
@@ -90,6 +158,7 @@ section {
 }
 
 #chapitre-05 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
@@ -99,6 +168,7 @@ section {
 }
 
 #chapitre-06 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
@@ -108,6 +178,7 @@ section {
 }
 
 #chapitre-07 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
@@ -117,6 +188,7 @@ section {
 }
 
 #chapitre-08 {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/espace_etoiles.svg);
