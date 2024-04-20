@@ -70,46 +70,46 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     background-image: url(/img/img_arriere_plan/espace.svg);
 }
 
-.cercle-grand {
+#chapitre-01 .cercle-grand {
     position: absolute;
     width: 20vw; 
 }
 
-.cercle-grand-01-morphing {
+#chapitre-01 .cercle-grand-01-morphing {
     top: 10vh;
 }
 
-.cercle-grand-02-morphing{
+#chapitre-01 .cercle-grand-02-morphing{
     top: 30vh;
     left: 60vw;
 }
 
-.cercle-petit {
+#chapitre-01 .cercle-petit {
     position: absolute;
     width: 5vw;
 }
 
-.cercle-petit-01-morphing {
+#chapitre-01 .cercle-petit-01-morphing {
     top: 20vh;
     left: 50vw;
 }
 
-.cercle-petit-02-morphing {
+#chapitre-01 .cercle-petit-02-morphing {
     top: 80vh;
     left: 30vw;
 }
 
-.cercle-petit-03-morphing {
+#chapitre-01 .cercle-petit-03-morphing {
     top: 70vh;
     left: 90vw;
 }
 
-.cercle-moyen {
+#chapitre-01 .cercle-moyen {
     position: absolute;
     width: 10vw;
 }
 
-.cercle-moyen-01-morphing {
+#chapitre-01 .cercle-moyen-01-morphing {
     top: 65vh;
     left: 40vw;
 }
@@ -237,6 +237,28 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     left: 80vw;
 }
 
+#chapitre-04 .poisson-bleu-orange{
+    position: absolute;
+    width:30vw;
+    top: 20vh;
+    left: 70vw;
+}
+
+#chapitre-04 .poisson-bleu-rose{
+    position: absolute;
+    width:50vw;
+    top: 40vh;
+    left: 10vw;
+}
+
+#chapitre-04 .chat-orange {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+}
+
+/* ----- Chapitre 05 ------ */
+
 #chapitre-05 {
     position: relative;
     width: 100vw;
@@ -247,15 +269,110 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     text-align: center;
 }
 
+#chapitre-05 .algue{
+    position: absolute;
+    width:90vw;
+    top: 29vh;
+    left: -20vw;
+}
+
+#chapitre-05 .algue-02{
+    position: absolute;
+    width:20%;
+    top: 65vh;
+    left: 0vw;
+}
+
+#chapitre-05 .coraux-vert-rose{
+    position: absolute;
+    width:20vw;
+    top: 70vh;
+    left: 80vw;
+}
+
+#chapitre-05 .coraux-tube-vert{
+    position: absolute;
+    width:10vw;
+    top: 60vh;
+    left: 80vw;
+}
+
+#chapitre-05 .hippocampe{
+    position: absolute;
+    width:50vw;
+    top: 50vh;
+    left: 50vw;
+}
+
+#chapitre-05 .raie{
+    position: absolute;
+    width:100vw;
+    top: -10vh;
+    left: -20vw;
+}
+
+#chapitre-05 .chat-orange {
+    position: absolute;
+    top: 20vh;
+    left: 70vw;
+    transform:scaleX(-1);
+}
+
+/* ----- Chapitre 06 ------ */
+
 #chapitre-06 {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(/img/img_arriere_plan/sable.svg), url(/img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
+
+#chapitre-06 .algue{
+    position: absolute;
+    width:80vw;
+    top: 45vh;
+    left: 45vw;
+}
+
+#chapitre-06 .algue-02{
+    position: absolute;
+    width:30%;
+    top: 60vh;
+    left: 60vw;
+}
+
+#chapitre-06 .chat-orange {
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+}
+
+#chapitre-06 .personnage-mauve {
+    position: absolute;
+    width: 20vw;
+    top: 60vh;
+    left: 40vw;
+}
+
+#chapitre-06 .poisson-bleu-orange{
+    position: absolute;
+    width:20vw;
+    top: 10vh;
+    left: 60vw;
+}
+
+#chapitre-06 .poisson-bleu-orange-02{
+    position: absolute;
+    width:15vw;
+    top: 35vh;
+    left: 20vw;
+    transform:scaleX(-1);
+}
+
+/* ----- Chapitre 07 ------ */
 
 #chapitre-07 {
     position: relative;
@@ -267,12 +384,108 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     text-align: center;
 }
 
+
+#chapitre-07 .algue{
+    position: absolute;
+    width:80vw;
+    top: 45vh;
+    left: 45vw;
+}
+
+#chapitre-07 .algue-02{
+    position: absolute;
+    width:30%;
+    top: 60vh;
+    left: 60vw;
+}
+
+#chapitre-07 .chat-orange {
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+}
+
+#chapitre-07 .personnage-mauve {
+    position: absolute;
+    width: 20vw;
+    top: 60vh;
+    left: 40vw;
+}
+
+#chapitre-07 .poisson-bleu-orange{
+    position: absolute;
+    width:20vw;
+    top: 10vh;
+    left: 60vw;
+}
+
+#chapitre-07 .poisson-bleu-orange-02{
+    position: absolute;
+    width:15vw;
+    top: 35vh;
+    left: 20vw;
+    transform:scaleX(-1);
+}
+
+/* ----- Chapitre 08 ------ */
+
 #chapitre-08 {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/espace_etoiles.svg);
+    background-image: url(/img/img_arriere_plan/espace.svg);
 }
+
+#chapitre-08 .cercle-grand {
+    position: absolute;
+    width: 20vw; 
+}
+
+#chapitre-08 .cercle-grand-01-morphing {
+    top: 10vh;
+}
+
+#chapitre-08 .cercle-grand-02-morphing{
+    top: 30vh;
+    left: 60vw;
+}
+
+#chapitre-08 .cercle-petit {
+    position: absolute;
+    width: 5vw;
+}
+
+#chapitre-08 .cercle-petit-01-morphing {
+    top: 20vh;
+    left: 50vw;
+}
+
+#chapitre-08 .cercle-petit-02-morphing {
+    top: 80vh;
+    left: 30vw;
+}
+
+#chapitre-08 .cercle-petit-03-morphing {
+    top: 70vh;
+    left: 90vw;
+}
+
+#chapitre-08 .cercle-moyen {
+    position: absolute;
+    width: 10vw;
+}
+
+#chapitre-08 .cercle-moyen-01-morphing {
+    top: 65vh;
+    left: 40vw;
+}
+
+#chapitre-08 .chat-orange {
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+}
+
 /* ---- Footer -----*/
 
 .texte-footer{
