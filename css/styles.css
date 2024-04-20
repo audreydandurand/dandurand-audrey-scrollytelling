@@ -137,6 +137,23 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     background-image: url(/img/img_arriere_plan/parallax_degrade.svg);
 }
 
+.parallax-eau {
+    position: absolute;
+}
+
+.parallax-etoile {
+    position: absolute;
+}
+
+.parallax-soleil {
+    position: absolute;
+    width: 20vw;
+    top: 3vw;
+    left: 70vw;
+}
+
+/* ----- Chapitre 03 ------ */
+
 #chapitre-03 {
     position: relative;
     width: 100vw;
@@ -147,6 +164,42 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     text-align: center;
 }
 
+#chapitre-03 .bulles{
+    position: absolute;
+    width:95vw;
+    left: 2vw;
+}
+
+#chapitre-03 .algue{
+    position: absolute;
+    width:90vw;
+    top: 40vh;
+    left: 30vw;
+}
+
+#chapitre-03 .coraux-bleu{
+    position: absolute;
+    width:20vw;
+    top: 60vh;
+    left: 5vw;
+}
+
+#chapitre-03 .coraux-tube-orange{
+    position: absolute;
+    width:60vw;
+    top: 60vh;
+    left: 65vw;
+}
+
+#chapitre-03 .chat-orange {
+    position: absolute;
+    top: 50vh;
+    left: 70vw;
+    transform:scaleX(-1);
+}
+
+/* ----- Chapitre 04 ------ */
+
 #chapitre-04 {
     position: relative;
     width: 100vw;
@@ -155,6 +208,33 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+}
+
+#chapitre-04 .bulles{
+    position: absolute;
+    width:95vw;
+    left: 2vw;
+}
+
+#chapitre-04 .algue{
+    position: absolute;
+    width:90vw;
+    top: 27vh;
+    left: 30vw;
+}
+
+#chapitre-04 .coraux-rose-mauve{
+    position: absolute;
+    width:20vw;
+    top: 67vh;
+    left: 5vw;
+}
+
+#chapitre-04 .coraux-tube-vert{
+    position: absolute;
+    width:20vw;
+    top: 70vh;
+    left: 80vw;
 }
 
 #chapitre-05 {
