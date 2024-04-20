@@ -121,6 +121,16 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     left: 70vw;
 }
 
+#chapitre-01 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--blanc);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
+}
+
+
 .planete {
     position: absolute;
     width: 30vw;
@@ -143,13 +153,23 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 
 .parallax-etoile {
     position: absolute;
+    top: 10vw;
 }
 
 .parallax-soleil {
     position: absolute;
     width: 20vw;
-    top: 3vw;
+    top: 10vw;
     left: 70vw;
+}
+
+#chapitre-02 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--blanc);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
 }
 
 /* ----- Chapitre 03 ------ */
@@ -196,6 +216,15 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     top: 50vh;
     left: 70vw;
     transform:scaleX(-1);
+}
+
+#chapitre-03 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--marine);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
 }
 
 /* ----- Chapitre 04 ------ */
@@ -257,6 +286,15 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     left: 10vw;
 }
 
+#chapitre-04 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--marine);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
+}
+
 /* ----- Chapitre 05 ------ */
 
 #chapitre-05 {
@@ -307,7 +345,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 #chapitre-05 .raie{
     position: absolute;
     width:100vw;
-    top: -10vh;
+    top: 0vh;
     left: -20vw;
 }
 
@@ -316,6 +354,15 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     top: 20vh;
     left: 70vw;
     transform:scaleX(-1);
+}
+
+#chapitre-05 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--marine);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
 }
 
 /* ----- Chapitre 06 ------ */
@@ -372,6 +419,15 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     transform:scaleX(-1);
 }
 
+#chapitre-06 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--marine);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
+}
+
 /* ----- Chapitre 07 ------ */
 
 #chapitre-07 {
@@ -405,26 +461,72 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     left: 10vw;
 }
 
-#chapitre-07 .personnage-mauve {
+#chapitre-07 .corps-personnage-mauve {
     position: absolute;
-    width: 20vw;
+    width: 18vw;
     top: 60vh;
+    left: 41vw;
+    z-index: 2;
+}
+
+#chapitre-07 .bras-gauche-personnage-mauve {
+    position: absolute;
+    width: 4vw;
+    top: 63vh;
+    left: 54vw;
+    transform: rotate(-0.04turn);
+    z-index: 1;
+}
+
+#chapitre-07 .bras-droit-personnage-mauve {
+    position: absolute;
+    width: 4vw;
+    top: 63vh;
+    left: 39vw;
+    transform: scaleX(-1) rotate(-0.04turn);
+    z-index: 1;
+}
+
+#chapitre-07 .oeil-droit-personnage-mauve {
+    position: absolute;
+    width: 0.8vw;
+    top: 65.5vh;
+    left: 50vw;
+    z-index: 3;
+}
+
+#chapitre-07 .oeil-gauche-personnage-mauve {
+    position: absolute;
+    width: 0.8vw;
+    top: 65.5vh;
+    left: 46vw;
+    transform: scaleX(-1);
+    z-index: 3;
+}
+
+
+#chapitre-07 .bouche-personnage-mauve {
+    position: absolute;
+    width: 2vw;
+    top: 67vh;
+    left: 47.5vw;
+    z-index: 3;
+}
+
+#chapitre-07 .baleine{
+    position: absolute;
+    width:70vw;
+    top: 10vh;
     left: 40vw;
 }
 
-#chapitre-07 .poisson-bleu-orange{
+#chapitre-07 p{
+    width: 70vw;
     position: absolute;
-    width:20vw;
-    top: 10vh;
-    left: 60vw;
-}
-
-#chapitre-07 .poisson-bleu-orange-02{
-    position: absolute;
-    width:15vw;
-    top: 35vh;
-    left: 20vw;
-    transform:scaleX(-1);
+    color: var(--marine);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
 }
 
 /* ----- Chapitre 08 ------ */
@@ -484,6 +586,15 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: absolute;
     top: 30vh;
     left: 40vw;
+}
+
+#chapitre-08 p{
+    width: 70vw;
+    position: absolute;
+    color: var(--blanc);
+    top: 5vh;
+    text-align: center;
+    padding-left: 15%;
 }
 
 /* ---- Footer -----*/
