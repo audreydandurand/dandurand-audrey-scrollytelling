@@ -1,16 +1,20 @@
+/*----- Header -----*/
+
 gsap.to(".icone", { 
     duration: 4,
     y: '40',
     repeat: -1,
   });
 
-gsap.timeline({repeat: 5})
-  .from("#chapitre-01 .planete", { duration: 10, scale: 0})
-  .to("#chapitre-01 .planete", { duration: 5, x:-1000, y: 500,  scale: 1.2});
+/*----- Chapitre 01 -----*/
 
 gsap.timeline({repeat: 5})
-  .from("#chapitre-01 .chat-orange", { duration: 10, x: 220, y: 200})
-  .to("#chapitre-01 .chat-orange", { duration: 5, x: -220, y: -220, scale: 1.4});
+  .from("#chapitre-01 .planete", { duration: 10, scale: 0})
+  .to("#chapitre-01 .planete", { duration: 5, x: "-150%", y: "120%",  scale: 1.2});
+
+gsap.timeline({repeat: 5})
+  .from("#chapitre-01 .chat-orange", { duration: 10, x: "100%", y: "100%"})
+  .to("#chapitre-01 .chat-orange", { duration: 5, x: "-100%", y: "-80%", scale: 1.4});
 
 gsap.timeline({repeat: 5})
   .from("#chapitre-01 .cercle-grand", { scale: 0.7, duration: 2.5})
@@ -18,7 +22,94 @@ gsap.timeline({repeat: 5})
   .from("#chapitre-01 .cercle-moyen", { scale: 0.5, duration: 3.75} )
   .to("#chapitre-01 .cercle-morphing", { scale: 1.5, duration: 5});
 
+/*----- Chapitre 03 et 4 -> Bulles -----*/
 
+gsap.to(".bulles", { 
+  duration: 10,
+  y: '5%',
+  scale: 1.2,
+  repeat: -1,
+  yoyo: true,
+});
+
+/*gsap.from("#chapitre-03 .chat-orange", { 
+  duration: 3,
+  y: '-250%',
+  repeat: -1,
+  ease: "power4.out",
+});*/
+
+/*gsap.from("#chapitre-04 .chat-orange", { 
+  duration: 15,
+  x: '500%',
+  repeat: -1,
+});*/
+
+/*----- Chapitre 04 -----*/
+
+gsap.from("#chapitre-04 .coraux-rose-mauve", { 
+  duration: 5,
+  rotate: '6',
+  repeat: -1,
+  yoyo: true,
+  ease: "expo.out",
+});
+
+/*----- Chapitre 05 -----*/
+
+gsap.to("#chapitre-05 .hippocampe", { 
+  duration: 4,
+  y: '10%',
+  repeat: -1,
+  yoyo: true,
+});
+
+gsap.from("#chapitre-05 .coraux-vert-rose", { 
+  duration: 5,
+  rotate: '3',
+  repeat: -1,
+  yoyo: true,
+  ease: "expo.out",
+});
+
+/*----- Chapitre 06 -----*/
+
+gsap.to("#chapitre-06 .personnage-mauve", { 
+  duration: 4,
+  y: '10%',
+  repeat: -1,
+  yoyo: true,
+  delay: 10,
+});
+
+gsap.from("#chapitre-06 .personnage-mauve", { 
+  duration: 10,
+  x: '300%',
+});
+
+/*----- Chapitre 08 -----*/
+
+gsap.timeline({repeat: 5})
+  .from("#chapitre-08 .cercle-petit-01-morphing", { scale: 0, duration: 3.75})
+  .from("#chapitre-08 .cercle-petit-03-morphing", { scale: 0, duration: 5})
+  .to("#chapitre-08 .cercle-moyen-01-morphing", { scale: 0, duration: 3.75})
+  .to("#chapitre-08 .cercle-petit-02-morphing", { scale: 0, duration: 10} )
+  .from("#chapitre-08 .cercle-moyen-01-morphing", { scale: 0, duration: 10});
+
+gsap.from("#chapitre-08 .cercle-grand-01-morphing", { 
+  duration: 8,
+  scale: 0.7,
+  repeat: -1,
+  yoyo: true,
+});
+
+gsap.from("#chapitre-08 .cercle-grand-02-morphing", { 
+  duration: 10,
+  scale: 0.5,
+  repeat: -1,
+  yoyo: true,
+  delay: 2,
+});
 
 const bodySpriteSheets = document.querySelector(".body-sprite-sheets");
 
