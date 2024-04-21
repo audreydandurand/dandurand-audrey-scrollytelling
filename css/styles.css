@@ -28,7 +28,7 @@ header {
 h1 {
     margin: 0;
     top: 0;
-    font-size: 10vw;
+    font-size: 9vw;
     padding: 3% 10px;
     text-align: center;
     color: var(--marine)
@@ -36,7 +36,7 @@ h1 {
 
 .icone {
     width: 10%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
 
 .header-bas-page {
@@ -45,7 +45,7 @@ h1 {
 }
 
 .texte-defilez {
-    padding-bottom: 2%;
+    padding-bottom: 6%;
 }
 /* ----- Main ------ */
 
@@ -104,6 +104,26 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     left: 90vw;
 }
 
+#chapitre-01 .cercle-petit-04-morphing {
+    top: 40vh;
+    left: 80vw;
+}
+
+#chapitre-01 .cercle-petit-05-morphing {
+    top: 50vh;
+    left: 20vw;
+}
+
+#chapitre-01 .cercle-petit-06-morphing {
+    top: 92vh;
+    left: 70vw;
+}
+
+#chapitre-01 .cercle-petit-07-morphing {
+    top: 75vh;
+    left: 76vw;
+}
+
 #chapitre-01 .cercle-moyen {
     position: absolute;
     width: 10vw;
@@ -114,6 +134,20 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     left: 40vw;
 }
 
+#chapitre-01 .cercle-moyen-02-morphing {
+    top: 32vh;
+    left: 23vw;
+}
+
+#chapitre-01 .cercle-moyen-03-morphing {
+    top: 68vh;
+    left: 10vw;
+}
+
+#chapitre-01 .cercle-moyen-04-morphing {
+    top: 87vh;
+    left: 50vw;
+}
 
 #chapitre-01 .chat-orange {
     position: absolute;
@@ -133,9 +167,9 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 
 .planete {
     position: absolute;
-    width: 30vw;
-    top: 25vh;
-    right: 35vw;
+    width: 60vw;
+    top: 20vh;
+    right: 20vw;
 }
 
 /* ----- Chapitre 02 ------ */
