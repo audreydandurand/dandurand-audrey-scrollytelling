@@ -248,7 +248,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 #chapitre-03 .chat-orange {
     position: absolute;
     top: 50vh;
-    left: 70vw;
+    left: 40vw;
     transform:scaleX(-1);
 }
 
@@ -291,6 +291,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     width:20vw;
     top: 67vh;
     left: 5vw;
+    transform-origin: bottom center;
 }
 
 #chapitre-04 .coraux-tube-vert{
@@ -317,7 +318,8 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 #chapitre-04 .chat-orange {
     position: absolute;
     top: 10vh;
-    left: 10vw;
+    left: -20vw;
+    transform: rotate(40deg);
 }
 
 #chapitre-04 p{
@@ -360,6 +362,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     width:20vw;
     top: 70vh;
     left: 80vw;
+    transform-origin: bottom center;
 }
 
 #chapitre-05 .coraux-tube-vert{
