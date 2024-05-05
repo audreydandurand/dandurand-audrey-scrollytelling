@@ -43,6 +43,18 @@ gsap.timeline({
   .from("#chapitre-01 .cercle-moyen", { scale: 0.5, duration: 3.75} )
   .to("#chapitre-01 .cercle-morphing", { scale: 1.5, duration: 5});
 
+
+gsap.to("#chapitre-02 .parallax-eau", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-2',
+  },
+  y: "-50%",
+});
+
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 
 gsap.to(".bulles", { 
