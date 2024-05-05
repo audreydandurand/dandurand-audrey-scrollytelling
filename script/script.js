@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 /*----- Header -----*/
 
 gsap.to(".icone", { 
@@ -122,4 +124,3 @@ window.addEventListener("scroll", function (e) {
     bodySpriteSheets.classList.remove('is-scrolling')
   }, 100); 
 })
-
