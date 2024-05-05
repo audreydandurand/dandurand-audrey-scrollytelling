@@ -207,6 +207,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     width: 100vw;
     height: 100vh;
     background-image: url(/img/img_arriere_plan/parallax_degrade.svg);
+    overflow: hidden;
 }
 
 .parallax-eau {
