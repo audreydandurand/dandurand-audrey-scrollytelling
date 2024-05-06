@@ -44,16 +44,29 @@ gsap.timeline({
   .to("#chapitre-01 .cercle-morphing", { scale: 1.5, duration: 5});
 
 
-gsap.to("#chapitre-02 .parallax-eau", {
-  scrollTrigger: {
-    scrub: true,
-    markers: true,
-    start: 'top bottom',
-    end: 'bottom top',
-    trigger: '#chapitre-2',
-  },
-  y: "-50%",
-});
+  gsap.to("#chapitre-02 .parallax-eau", { 
+    scrollTrigger: {
+      scrub: 0.5,
+      markers: true,
+      start: 'top 50%',
+      end: 'bottom top',
+      trigger: '#chapitre-02',
+    },
+    y: '-80%',
+    yoyo: true,
+  });
+
+  gsap.to("#chapitre-02 .parallax-eau", { 
+    scrollTrigger: {
+      scrub: 0.5,
+      markers: true,
+      start: 'top 50%',
+      end: 'bottom top',
+      trigger: '#chapitre-02',
+    },
+    y: '-80%',
+    yoyo: true,
+  });
 
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 
