@@ -557,7 +557,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: absolute;
     width:20vw;
     top: 10vh;
-    left: 60vw;
+    left: -20vw;
     border: 1px solid blue;
 }
 
@@ -565,7 +565,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: absolute;
     width:15vw;
     top: 35vh;
-    left: 20vw;
+    left: 100vw;
     transform:scaleX(-1);
     border: 1px solid blue;
 }

@@ -308,6 +308,30 @@ gsap.from("#chapitre-06 .chat-orange", {
   yoyo: true,
 });
 
+gsap.to("#chapitre-06 .poisson-bleu-orange", { 
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: '20% 50%',
+    end: 'bottom 70%',
+    trigger: '#chapitre-06',
+  },
+  x: '600%',
+  yoyo: true,
+});
+
+gsap.to("#chapitre-06 .poisson-bleu-orange-02", { 
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: '20% 50%',
+    end: 'bottom 70%',
+    trigger: '#chapitre-06',
+  },
+  x: '-900%',
+  yoyo: true,
+});
+
 /*----- Chapitre 08 -----*/
 
 gsap.timeline({
