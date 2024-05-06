@@ -296,11 +296,10 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     border: 1px solid blue;
 }
 
-#chapitre-03 .algue{
+#chapitre-03 .sprite-sheets-plante {
     position: absolute;
-    width:90vw;
-    top: 40vh;
-    left: 30vw;
+    top: 43vh;
+    left: 50vw;
     border: 1px solid blue;
 }
 
@@ -356,11 +355,10 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     border: 1px solid blue;
 }
 
-#chapitre-04 .algue{
+#chapitre-04 .sprite-sheets-plante {
     position: absolute;
-    width:90vw;
-    top: 27vh;
-    left: 30vw;
+    top: 31vh;
+    left: 45vw;
     border: 1px solid blue;
 }
 
@@ -426,9 +424,8 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     text-align: center;
 }
 
-#chapitre-05 .algue{
+#chapitre-05 .sprite-sheets-plante {
     position: absolute;
-    width:90vw;
     top: 29vh;
     left: -20vw;
     border: 1px solid blue;
@@ -512,6 +509,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     border: 1px solid blue;
 }
 
+#chapitre-06 .sprite-sheets-plante {
+    position: absolute;
+    top: 45vh;
+    left: 45vw;
+    border: 1px solid blue;
+}
+
 #chapitre-06 .algue-02{
     position: absolute;
     width:30%;
@@ -579,6 +583,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     width:80vw;
     top: 45vh;
     left: 45vw;
+    border: 1px solid blue;
+}
+
+#chapitre-07 .sprite-sheets-plante {
+    position: absolute;
+    top: 40vh;
+    left: 60vw;
     border: 1px solid blue;
 }
 
