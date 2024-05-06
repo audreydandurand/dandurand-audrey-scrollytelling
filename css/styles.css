@@ -247,6 +247,35 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     padding-left: 15%;
 }
 
+#svg2 {
+    position: absolute;
+    display: flex;
+    width:  100%;
+    height: 100%;
+    top: -10vh;
+    left: 50%;
+    transform: scale(0.5);
+  }
+  
+  #etoile{
+    visibility:hidden;
+  }
+
+/*#svg2 {
+    display: flex;
+    margin: 20px auto;
+    height: 400px;
+    width:400px;
+    top: 10vw;
+    left: 10vw;
+    color: var(--jaune);
+  }
+  
+  #hippo {
+    visibility:hidden;
+  }*/
+
+
 /* ----- Chapitre 03 ------ */
 
 #chapitre-03 {
@@ -715,6 +744,11 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     padding-left: 15%;
 }
 
+.svgLigne {
+    position: absolute;
+    left: 30%;
+}
+
 /* ---- Footer -----*/
 
 .texte-footer{
@@ -761,7 +795,8 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     animation-play-state: paused;
 }
 
-.body-sprite-sheets.is-scrolling .sprite-sheets-plante {
+
+body.is-scrolling .sprite-sheets-plante {
     animation-play-state: running;
 }
 

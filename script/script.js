@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 
 /*----- Header -----*/
 
@@ -14,6 +16,7 @@ gsap.to(".icone", {
 gsap.timeline({
   repeat: 5,
   scrollTrigger: {
+    pin: true,
     markers: true,
     toggleActions: "restart complete reverse reset",
     trigger: "#chapitre-01"}
@@ -94,6 +97,23 @@ gsap.to("#chapitre-02 .chat-orange", {
   yoyo: true,
 });
 
+
+
+let circle = document.querySelector("#circle");
+let anim1 = gsap.to(circle,{
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: 'top 60%',
+    end: '40% top',
+    trigger: '#chapitre-02',
+  },
+  morphSVG: {
+    shape: "#etoile",
+  },
+  fill:"#FFCE51",
+  yoyo: true
+});
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 
 gsap.to(".bulles", { 
@@ -252,14 +272,44 @@ gsap.from("#chapitre-08 .cercle-grand-02-morphing", {
   delay: 2,
 });
 
-const bodySpriteSheets = document.querySelector(".body-sprite-sheets");
+gsap.from("#chapitre-08 .chat-orange", { 
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: 'top 63%',
+    end: '50% 50%',
+    trigger: '#chapitre-08',
+  },
+  y: '-100%',
+  yoyo: true,
+});
 
+gsap.set("#ligne",{drawSVG:"0% 0%"});
+
+gsap.to(
+  "#ligne",
+  {
+    drawSVG:"0% 100%", 
+    duration: 4, 
+    ease:"power1.inOut",
+    scrollTrigger: {
+      scrub: 0.5,
+      markers: true,
+      start: 'top 63%',
+      end: '50% 50%',
+      trigger: '#chapitre-08',
+    },
+  }
+);
+
+
+const body = document.querySelector("body");
 let delai;
 
-window.addEventListener("scroll", function (e) {
-  bodySpriteSheets.classList.add('is-scrolling');
+window.addEventListener("scroll", function () {
+  body.classList.add('is-scrolling');
   window.clearTimeout(delai)
   delai =  setTimeout(function() {
-    bodySpriteSheets.classList.remove('is-scrolling')
+    body.classList.remove('is-scrolling')
   }, 100); 
 })

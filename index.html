@@ -6,7 +6,7 @@
     <title>L'espace et l'astro-chat</title>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="body-scollytelling">
     <!--- Début écran d'introduction --->
     <header>
         <h1>L'espace et l'astro-chat</h1>
@@ -78,7 +78,30 @@
           <img class="parallax-degrade" alt="degrade" src="/img/img_arriere_plan/parralax_degrade_02.svg">
           <img class="parallax-eau" alt="eau" src="/img/img_arriere_plan/parallax_eau_fond.svg">
           <img class="parallax-etoile" alt="etoile" src="/img/img_arriere_plan/parallax_etoile.svg">
-          <img class="parallax-soleil" alt="soleil" src="/img/img_arriere_plan/parallax_soleil.svg">
+          
+          <svg id="svg2"  >
+            <style type="text/css">
+              .st1{fill:#ffffff;}
+            </style>
+            
+            <path id="circle" class="st1" d="M532.382 255C532.382 395.833 413.29 510 266.382 510C119.474 510 0.381836 395.833 0.381836 255C0.381836 114.167 119.474 0 266.382 0C413.29 0 532.382 114.167 532.382 255Z" fill="#FFCE51"/>
+              
+            <path id="etoile" class="st1" fill-rule="evenodd" clip-rule="evenodd" d="M301.882 0L320.69 59.5945C372.316 62.9587 419.9 80.4443 459.27 108.054L508.877 78.053L486.129 129.617C512.707 153.965 534.029 183.541 548.299 216.623H591.479L557.617 241.953C564.623 264.8 568.382 288.979 568.382 314C568.382 345.631 562.374 375.918 551.393 403.867L583.342 431.955L540.106 428.535C522.077 462.856 496.199 492.737 464.732 516.012L480.863 567.127L436.744 534.125C397.313 556.292 351.396 569 302.382 569C299.029 569 295.69 568.94 292.367 568.823L268.838 622.156L256.871 565.282C224.721 559.969 194.546 549.123 167.45 533.804L122.902 567.127L139.223 515.411C96.7659 483.757 64.5822 440.038 48.2744 389.623L0 385.804L40.9041 361.067C37.9348 345.812 36.3823 330.08 36.3823 314C36.3823 289.201 40.075 265.229 46.9619 242.562L12.2856 216.623H56.4654C77.3527 168.2 113.35 127.288 158.822 99.2892L148.352 49.5299L187.497 83.9445C216.779 70.4815 249.03 62.0051 283.053 59.663L301.882 0Z" fill="#FFCE51"/>
+              
+            </svg>
+              
+          
+          <!--<svg id="svg2" viewBox="9 80 800 400" style="enable-background:new 9 80 800 400;">
+            <style type="text/css">
+              
+            </style>
+            
+            <path id="circle" class="st1" d="M301.882 0L320.69 59.5945C372.316 62.9587 419.9 80.4443 459.27 108.054L508.877 78.053L486.129 129.617C512.707 153.965 534.029 183.541 548.299 216.623H591.479L557.617 241.953C564.623 264.8 568.382 288.979 568.382 314C568.382 345.631 562.374 375.918 551.393 403.867L583.342 431.955L540.106 428.535C522.077 462.856 496.199 492.737 464.732 516.012L480.863 567.127L436.744 534.125C397.313 556.292 351.396 569 302.382 569C299.029 569 295.69 568.94 292.367 568.823L268.838 622.156L256.871 565.282C224.721 559.969 194.546 549.123 167.45 533.804L122.902 567.127L139.223 515.411C96.7659 483.757 64.5822 440.038 48.2744 389.623L0 385.804L40.9041 361.067C37.9348 345.812 36.3823 330.08 36.3823 314C36.3823 289.201 40.075 265.229 46.9619 242.562L12.2856 216.623H56.4654C77.3527 168.2 113.35 127.288 158.822 99.2892L148.352 49.5299L187.497 83.9445C216.779 70.4815 249.03 62.0051 283.053 59.663L301.882 0Z" fill="#D7AC4F" />
+              
+            <path id="hippo" class="st1" d="M301.882 0L320.69 59.5945C372.316 62.9587 419.9 80.4443 459.27 108.054L508.877 78.053L486.129 129.617C512.707 153.965 534.029 183.541 548.299 216.623H591.479L557.617 241.953C564.623 264.8 568.382 288.979 568.382 314C568.382 345.631 562.374 375.918 551.393 403.867L583.342 431.955L540.106 428.535C522.077 462.856 496.199 492.737 464.732 516.012L480.863 567.127L436.744 534.125C397.313 556.292 351.396 569 302.382 569C299.029 569 295.69 568.94 292.367 568.823L268.838 622.156L256.871 565.282C224.721 559.969 194.546 549.123 167.45 533.804L122.902 567.127L139.223 515.411C96.7659 483.757 64.5822 440.038 48.2744 389.623L0 385.804L40.9041 361.067C37.9348 345.812 36.3823 330.08 36.3823 314C36.3823 289.201 40.075 265.229 46.9619 242.562L12.2856 216.623H56.4654C77.3527 168.2 113.35 127.288 158.822 99.2892L148.352 49.5299L187.497 83.9445C216.779 70.4815 249.03 62.0051 283.053 59.663L301.882 0Z" fill="#D7AC4F" />
+              
+              
+            </svg>--->
           <img class="chat-orange" alt="chat" src="/img/img_personnages/chat_03.svg">
           <p class="texte-chapitre-02">Tout d'un coup, il se fait attiré par la gravité de la planète et celui-ci pique du nez à toute vitesse vers cette sphère bleauté.</p>
         </section>
@@ -225,6 +248,10 @@
           <img class="cercle-morphing cercle-grand cercle-grand-02-morphing" alt="cercle représentant une étoile" src="/img/img_elements_visuels/cercle_morphing.svg">
           <img class="cercle-morphing cercle-petit cercle-petit-03-morphing" alt="cercle représentant une étoile" src="/img/img_elements_visuels/cercle_morphing.svg">
           <img class="chat-orange" alt="chat" src="/img/img_personnages/chat_02.svg">
+          <svg class="svgLigne" width="30%" height="30%" viewBox="0 0 669 2454" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="ligne" d="M10 8.5C253.833 300 722.8 1197 648 2453" stroke="#A0B3DA" stroke-width="26"/>
+          </svg>
+            
           <p class="texte-chapitre-08">L'astro-chat atterit dans l'espace et il flotte toujours en plein millieu de ce goufre immense.</p>
         </section>
         <!--- Fin chapitre 08 --->
@@ -236,6 +263,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>
