@@ -169,11 +169,7 @@ gsap.to("#chapitre-03 .sprite-sheets-plante", {
   ease: "power4.out",
 });*/
 
-/*gsap.from("#chapitre-04 .chat-orange", { 
-  duration: 15,
-  x: '500%',
-  repeat: -1,
-});*/
+
 
 /*----- Chapitre 04 -----*/
 
@@ -201,6 +197,18 @@ gsap.to('#chapitre-04 .sprite-sheets-poisson', {
   },
   yoyo: true,
 })
+
+gsap.from("#chapitre-04 .chat-orange", { 
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 50%',
+    end: 'bottom top',
+    trigger: '#chapitre-04',
+  },
+  x: '600%',
+});
+
 
 /*----- Chapitre 05 -----*/
 
