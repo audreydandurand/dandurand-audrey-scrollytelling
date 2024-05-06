@@ -395,6 +395,20 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     border: 1px solid blue;
 }
 
+#chapitre-04 .sprite-sheets-poisson {
+    position: absolute;
+    width: 30%;
+    border: 1px solid blue;
+    transform: scaleX(-1);
+}
+
+.svgCourbePoisson{
+    position: absolute;
+    top: 10vh;
+    left: -35vw;
+    opacity: 0;
+}
+
 #chapitre-04 .chat-orange {
     position: absolute;
     top: 10vh;
@@ -785,7 +799,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     animation-play-state: paused;
 }
 
-.body-sprite-sheets.is-scrolling .sprite-sheets-poisson {
+.body.is-scrolling .sprite-sheets-poisson {
     animation-play-state: running;
 }
 

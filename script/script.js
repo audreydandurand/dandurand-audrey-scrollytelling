@@ -173,6 +173,22 @@ gsap.from("#chapitre-04 .coraux-rose-mauve", {
   ease: "expo.out",
 });
 
+gsap.to('#chapitre-04 .sprite-sheets-poisson', {
+  motionPath: {
+    align: '#courbe',
+    path: '#courbe',
+    alignOrigin: [0.5, 0.5]
+  },
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 50%',
+    end: 'bottom top',
+    trigger: '#chapitre-04',
+  },
+  yoyo: true,
+})
+
 /*----- Chapitre 05 -----*/
 
 gsap.to("#chapitre-05 .hippocampe", { 
