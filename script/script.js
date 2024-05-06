@@ -16,7 +16,6 @@ gsap.to(".icone", {
 gsap.timeline({
   repeat: 5,
   scrollTrigger: {
-    pin: true,
     markers: true,
     toggleActions: "restart complete reverse reset",
     trigger: "#chapitre-01"}
@@ -26,6 +25,7 @@ gsap.timeline({
 
 gsap.timeline({
   repeat: 5,
+  
   scrollTrigger: {
     markers: true,
     toggleActions: "restart complete reverse reset",
@@ -36,7 +36,7 @@ gsap.timeline({
 
 gsap.timeline({
   repeat: 5,
-  scrollTrigger: {
+  scrollTrigger: {   
     markers: true,
     toggleActions: "restart complete reverse reset",
     trigger: "#chapitre-01"}
@@ -87,7 +87,7 @@ gsap.timeline({
 
 gsap.to("#chapitre-02 .chat-orange", { 
   scrollTrigger: {
-    scrub: 0.5,
+    scrub: true,
     markers: true,
     start: 'top 50%',
     end: 'bottom top',
@@ -128,7 +128,7 @@ gsap.to(".bulles", {
 
 gsap.to("#chapitre-03 .chat-orange", { 
   scrollTrigger: {
-    scrub: 0.5,
+    scrub: true,
     markers: true,
     start: 'top 63%',
     end: '50% 50%',
