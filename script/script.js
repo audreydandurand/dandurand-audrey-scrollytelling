@@ -46,7 +46,7 @@ gsap.timeline({
 
   gsap.to("#chapitre-02 .parallax-eau", { 
     scrollTrigger: {
-      scrub: 0.5,
+      scrub: true,
       markers: true,
       start: '20% 50%',
       end: 'bottom top',
@@ -58,7 +58,7 @@ gsap.timeline({
 
   gsap.to("#chapitre-02 .parallax-degrade", { 
     scrollTrigger: {
-      scrub: 0.5,
+      scrub: true,
       markers: true,
       start: 'top 50%',
       end: 'bottom top',
@@ -70,7 +70,7 @@ gsap.timeline({
 
   gsap.to("#chapitre-02 .parallax-etoile", { 
     scrollTrigger: {
-      scrub: 0.5,
+      scrub: true,
       markers: true,
       start: 'top bottom',
       end: 'bottom top',
@@ -82,6 +82,17 @@ gsap.timeline({
     yoyo: true,
   });
 
+gsap.to("#chapitre-02 .chat-orange", { 
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: 'top bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-02',
+  },
+  y: '600%',
+  yoyo: true,
+});
 
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 

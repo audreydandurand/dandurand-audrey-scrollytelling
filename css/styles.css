@@ -230,6 +230,14 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     border: 1px solid blue;
 }
 
+#chapitre-02 .chat-orange {
+    position: absolute;
+    top: -25vh;
+    left: 40vw;
+    transform:scaleX(-1);
+    border: 1px solid blue;
+}
+
 #chapitre-02 p{
     width: 70vw;
     position: absolute;
