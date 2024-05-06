@@ -342,7 +342,7 @@ gsap.to("#chapitre-07 .sable", {
     end: 'bottom top',
     trigger: '#chapitre-07',
   },
-  y: '100%',
+  y: '50%',
 });
 
 gsap.to("#chapitre-07 .sprite-sheets-plante", { 
@@ -366,6 +366,43 @@ gsap.to("#chapitre-07 .algue-02", {
   },
   y: '100%',
 });
+
+gsap.to("#chapitre-07 .fond-marin", { 
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: '50% bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-07',
+  },
+  opacity: 1,
+});
+
+gsap.to("#chapitre-07 .degrade", { 
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: 'top bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-07',
+  },
+  opacity: 1,
+  y: '-80%',
+});
+
+gsap.to("#chapitre-07 .chat-orange", { 
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: '80% bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-07',
+  },
+  opacity: 1,
+  y: '250%',
+  x: '50%',
+});
+
 /*----- Chapitre 08 -----*/
 
 gsap.timeline({
