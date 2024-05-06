@@ -585,7 +585,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(/img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;

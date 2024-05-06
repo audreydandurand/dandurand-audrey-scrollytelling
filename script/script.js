@@ -332,6 +332,40 @@ gsap.to("#chapitre-06 .poisson-bleu-orange-02", {
   yoyo: true,
 });
 
+/*----- Chapitre 07 -----*/
+
+gsap.to("#chapitre-07 .sable", { 
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: '90% bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-07',
+  },
+  y: '100%',
+});
+
+gsap.to("#chapitre-07 .sprite-sheets-plante", { 
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: '96% bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-07',
+  },
+  y: '100%',
+});
+
+gsap.to("#chapitre-07 .algue-02", { 
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: '96% bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-07',
+  },
+  y: '100%',
+});
 /*----- Chapitre 08 -----*/
 
 gsap.timeline({
