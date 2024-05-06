@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MorphSVGPlugin);
 
 /*----- Header -----*/
 
@@ -68,6 +67,21 @@ gsap.timeline({
     y: '-100%',
     yoyo: true,
   });
+
+  gsap.to("#chapitre-02 .parallax-etoile", { 
+    scrollTrigger: {
+      scrub: 0.5,
+      markers: true,
+      start: 'top bottom',
+      end: 'bottom top',
+      trigger: '#chapitre-02',
+    },
+    y: '-100%',
+    x: '-20%',
+    scaleX: 0.5,
+    yoyo: true,
+  });
+
 
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 
