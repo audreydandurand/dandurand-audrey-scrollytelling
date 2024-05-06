@@ -137,6 +137,19 @@ gsap.to("#chapitre-03 .chat-orange", {
   y: '300%',
   yoyo: true,
 });
+
+gsap.to("#chapitre-03 .sprite-sheets-plante", { 
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 50%',
+    end: 'bottom top',
+    trigger: '#chapitre-03',
+  },
+  scaleY: 2,
+  yoyo: true,
+});
+
 /*gsap
   .timeline({
     scrollTrigger: {
