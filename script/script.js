@@ -86,7 +86,7 @@ gsap.to("#chapitre-02 .chat-orange", {
   scrollTrigger: {
     scrub: 0.5,
     markers: true,
-    start: 'top bottom',
+    start: 'top 50%',
     end: 'bottom top',
     trigger: '#chapitre-02',
   },
@@ -105,6 +105,29 @@ gsap.to(".bulles", {
   repeat: -1,
   yoyo: true,
 });
+
+gsap.to("#chapitre-03 .chat-orange", { 
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: 'top 63%',
+    end: '50% 50%',
+    trigger: '#chapitre-03',
+  },
+  y: '300%',
+  yoyo: true,
+});
+/*gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: 'top 63%',
+      end: '50% 50%',
+      trigger: '#chapitre-03',
+    }
+  })
+  .to("#chapitre-03 .chat-orange", { y: "300%" })
+  .to("#chapitre-03 .chat-orange",  { x: "300%" });*/
 
 /*gsap.from("#chapitre-03 .chat-orange", { 
   duration: 3,

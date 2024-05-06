@@ -257,6 +257,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    overflow: hidden;
 }
 
 #chapitre-03 .bulles{
@@ -292,7 +293,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 
 #chapitre-03 .chat-orange {
     position: absolute;
-    top: 50vh;
+    top: -23vh;
     left: 40vw;
     transform:scaleX(-1);
     border: 1px solid blue;
