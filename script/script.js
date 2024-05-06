@@ -248,7 +248,7 @@ gsap.from("#chapitre-05 .raie", {
   yoyo: true,
 });
 
-gsap.from("#chapitre-05 .chat-orange", { 
+/*gsap.from("#chapitre-05 .chat-orange", { 
   scrollTrigger: {
     scrub: 0.5,
     markers: true,
@@ -258,7 +258,21 @@ gsap.from("#chapitre-05 .chat-orange", {
   },
   x: '200%',
   yoyo: true,
-});
+});*/
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      scrub: 0.5,
+      markers: true,
+      start: "20% 50%",
+      end: "bottom 70%",
+      trigger: "#chapitre-05"
+    }
+  })
+  .from("#chapitre-05 .chat-orange", { x: "200%" })
+  .to("#chapitre-05 .chat-orange",  { y: "-10%", duration: 2, yoyo: true})
+  .to("#chapitre-05 .chat-orange",  { x: "-500%"});
 
 /*----- Chapitre 06 -----*/
 
@@ -272,9 +286,26 @@ gsap.to("#chapitre-06 .personnage-mauve", {
 });
 
 gsap.from("#chapitre-06 .personnage-mauve", { 
-  scrollTrigger: '#chapitre6',
-  duration: 10,
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 70%',
+    end: 'bottom 70%',
+    trigger: '#chapitre-06',
+  },
   x: '300%',
+});
+
+gsap.from("#chapitre-06 .chat-orange", { 
+  scrollTrigger: {
+    scrub: 0.5,
+    markers: true,
+    start: '20% 50%',
+    end: 'bottom 70%',
+    trigger: '#chapitre-06',
+  },
+  x: '-200%',
+  yoyo: true,
 });
 
 /*----- Chapitre 08 -----*/
