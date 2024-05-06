@@ -48,7 +48,7 @@ gsap.timeline({
     scrollTrigger: {
       scrub: 0.5,
       markers: true,
-      start: 'top 50%',
+      start: '20% 50%',
       end: 'bottom top',
       trigger: '#chapitre-02',
     },
@@ -56,7 +56,7 @@ gsap.timeline({
     yoyo: true,
   });
 
-  gsap.to("#chapitre-02 .parallax-eau", { 
+  gsap.to("#chapitre-02 .parallax-degrade", { 
     scrollTrigger: {
       scrub: 0.5,
       markers: true,
@@ -64,7 +64,7 @@ gsap.timeline({
       end: 'bottom top',
       trigger: '#chapitre-02',
     },
-    y: '-80%',
+    y: '-100%',
     yoyo: true,
   });
 
