@@ -4,7 +4,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 /*----- Header -----*/
 
-gsap.to(".icone", { 
+gsap.to(".icone", {
   scrollTrigger: 'header',
   duration: 4,
   y: '40',
@@ -14,81 +14,116 @@ gsap.to(".icone", {
 /*----- Chapitre 01 -----*/
 
 gsap.timeline({
-  repeat: 5,
-  scrollTrigger: {
-    markers: true,
-    toggleActions: "restart complete reverse reset",
-    trigger: "#chapitre-01"}
+    repeat: 5,
+    scrollTrigger: {
+      //markers: true,
+      pin: true,
+      toggleActions: "restart complete reverse reset",
+      trigger: "#chapitre-01"
+    }
   })
-  .from("#chapitre-01 .planete", { duration: 10, scale: 0})
-  .to("#chapitre-01 .planete", { duration: 5, x: "-150%", y: "120%",  scale: 1.2});
+  .from("#chapitre-01 .planete", {
+    duration: 10,
+    scale: 0
+  })
+  .to("#chapitre-01 .planete", {
+    duration: 5,
+    x: "-150%",
+    y: "120%",
+    scale: 1.2
+  });
 
 gsap.timeline({
-  repeat: 5,
-  
-  scrollTrigger: {
-    markers: true,
-    toggleActions: "restart complete reverse reset",
-    trigger: "#chapitre-01"}
+    repeat: 5,
+
+    scrollTrigger: {
+     // markers: true,
+     // pin: true,
+      toggleActions: "restart complete reverse reset",
+      trigger: "#chapitre-01"
+    }
   })
-  .from("#chapitre-01 .chat-orange", { duration: 10, x: "100%", y: "100%"})
-  .to("#chapitre-01 .chat-orange", { duration: 5, x: "-100%", y: "-80%", scale: 1.4});
+  .from("#chapitre-01 .chat-orange", {
+    duration: 10,
+    x: "100%",
+    y: "100%"
+  })
+  .to("#chapitre-01 .chat-orange", {
+    duration: 5,
+    x: "-100%",
+    y: "-80%",
+    scale: 1.4
+  });
 
 gsap.timeline({
-  repeat: 5,
-  scrollTrigger: {   
-    markers: true,
-    toggleActions: "restart complete reverse reset",
-    trigger: "#chapitre-01"}
+    repeat: 5,
+    scrollTrigger: {
+     // markers: true,
+     // pin: true,
+      toggleActions: "restart complete reverse reset",
+      trigger: "#chapitre-01"
+    }
   })
-  .from("#chapitre-01 .cercle-grand", { scale: 0.7, duration: 2.5})
-  .from("#chapitre-01 .cercle-petit", { scale: 0, duration: 3.75})
-  .from("#chapitre-01 .cercle-moyen", { scale: 0.5, duration: 3.75} )
-  .to("#chapitre-01 .cercle-morphing", { scale: 1.5, duration: 5});
-
-
-  gsap.to("#chapitre-02 .parallax-eau", { 
-    scrollTrigger: {
-      scrub: true,
-      markers: true,
-      start: '20% 50%',
-      end: 'bottom top',
-      trigger: '#chapitre-02',
-    },
-    y: '-80%',
-    yoyo: true,
+  .from("#chapitre-01 .cercle-grand", {
+    scale: 0.7,
+    duration: 2.5
+  })
+  .from("#chapitre-01 .cercle-petit", {
+    scale: 0,
+    duration: 3.75
+  })
+  .from("#chapitre-01 .cercle-moyen", {
+    scale: 0.5,
+    duration: 3.75
+  })
+  .to("#chapitre-01 .cercle-morphing", {
+    scale: 1.5,
+    duration: 5
   });
 
-  gsap.to("#chapitre-02 .parallax-degrade", { 
-    scrollTrigger: {
-      scrub: true,
-      markers: true,
-      start: 'top 50%',
-      end: 'bottom top',
-      trigger: '#chapitre-02',
-    },
-    y: '-100%',
-    yoyo: true,
-  });
 
-  gsap.to("#chapitre-02 .parallax-etoile", { 
-    scrollTrigger: {
-      scrub: true,
-      markers: true,
-      start: 'top bottom',
-      end: 'bottom top',
-      trigger: '#chapitre-02',
-    },
-    y: '-100%',
-    x: '-20%',
-    scaleX: 0.5,
-    yoyo: true,
-  });
-
-gsap.to("#chapitre-02 .chat-orange", { 
+gsap.to("#chapitre-02 .parallax-eau", {
   scrollTrigger: {
     scrub: true,
-    markers: true,
+   // markers: true,
+    start: '20% 50%',
+    end: 'bottom top',
+    trigger: '#chapitre-02',
+  },
+  y: '-80%',
+  yoyo: true,
+});
+
+gsap.to("#chapitre-02 .parallax-degrade", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: 'top 50%',
+    end: 'bottom top',
+    trigger: '#chapitre-02',
+  },
+  y: '-100%',
+  yoyo: true,
+});
+
+gsap.to("#chapitre-02 .parallax-etoile", {
+  scrollTrigger: {
+    scrub: true,
+   // markers: true,
+    start: 'top bottom',
+    end: 'bottom top',
+    trigger: '#chapitre-02',
+  },
+  y: '-100%',
+  x: '-20%',
+  scaleX: 0.5,
+  yoyo: true,
+});
+
+gsap.to("#chapitre-02 .chat-orange", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
     start: 'top 50%',
     end: 'bottom top',
     trigger: '#chapitre-02',
@@ -100,10 +135,10 @@ gsap.to("#chapitre-02 .chat-orange", {
 
 
 let circle = document.querySelector("#circle");
-let anim1 = gsap.to(circle,{
+let anim1 = gsap.to(circle, {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: 'top 60%',
     end: '40% top',
     trigger: '#chapitre-02',
@@ -111,12 +146,12 @@ let anim1 = gsap.to(circle,{
   morphSVG: {
     shape: "#etoile",
   },
-  fill:"#FFCE51",
+  fill: "#FFCE51",
   yoyo: true
 });
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 
-gsap.to(".bulles", { 
+gsap.to(".bulles", {
   scrollTrigger: '#chapitre3',
   scrollTrigger: '#chapitre4',
   duration: 10,
@@ -126,10 +161,10 @@ gsap.to(".bulles", {
   yoyo: true,
 });
 
-gsap.to("#chapitre-03 .chat-orange", { 
+gsap.to("#chapitre-03 .chat-orange", {
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    //markers: true,
     start: 'top 63%',
     end: '50% 50%',
     trigger: '#chapitre-03',
@@ -138,10 +173,10 @@ gsap.to("#chapitre-03 .chat-orange", {
   yoyo: true,
 });
 
-gsap.to("#chapitre-03 .sprite-sheets-plante", { 
+gsap.to("#chapitre-03 .sprite-sheets-plante", {
   scrollTrigger: {
     scrub: true,
-    markers: true,
+   // markers: true,
     start: 'top 50%',
     end: 'bottom top',
     trigger: '#chapitre-03',
@@ -173,7 +208,7 @@ gsap.to("#chapitre-03 .sprite-sheets-plante", {
 
 /*----- Chapitre 04 -----*/
 
-gsap.from("#chapitre-04 .coraux-rose-mauve", { 
+gsap.from("#chapitre-04 .coraux-rose-mauve", {
   scrollTrigger: '#chapitre4',
   duration: 5,
   rotate: '6',
@@ -190,7 +225,7 @@ gsap.to('#chapitre-04 .sprite-sheets-poisson', {
   },
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    //markers: true,
     start: 'top 50%',
     end: 'bottom top',
     trigger: '#chapitre-04',
@@ -198,10 +233,10 @@ gsap.to('#chapitre-04 .sprite-sheets-poisson', {
   yoyo: true,
 })
 
-gsap.from("#chapitre-04 .chat-orange", { 
+gsap.from("#chapitre-04 .chat-orange", {
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    //markers: true,
     start: 'top 50%',
     end: 'bottom top',
     trigger: '#chapitre-04',
@@ -212,10 +247,10 @@ gsap.from("#chapitre-04 .chat-orange", {
 
 /*----- Chapitre 05 -----*/
 
-gsap.to("#chapitre-05 .hippocampe", { 
+gsap.to("#chapitre-05 .hippocampe", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: 'top bottom',
     end: 'bottom top',
     trigger: '#chapitre-05',
@@ -224,10 +259,10 @@ gsap.to("#chapitre-05 .hippocampe", {
   yoyo: true,
 });
 
-gsap.from("#chapitre-05 .coraux-vert-rose", { 
+gsap.from("#chapitre-05 .coraux-vert-rose", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: 'top bottom',
     end: 'bottom top',
     trigger: '#chapitre-05',
@@ -236,10 +271,10 @@ gsap.from("#chapitre-05 .coraux-vert-rose", {
   yoyo: true,
 });
 
-gsap.from("#chapitre-05 .raie", { 
+gsap.from("#chapitre-05 .raie", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //arkers: true,
     start: '20% 50%',
     end: 'bottom 70%',
     trigger: '#chapitre-05',
@@ -248,35 +283,31 @@ gsap.from("#chapitre-05 .raie", {
   yoyo: true,
 });
 
-/*gsap.from("#chapitre-05 .chat-orange", { 
-  scrollTrigger: {
-    scrub: 0.5,
-    markers: true,
-    start: '20% 50%',
-    end: 'bottom 70%',
-    trigger: '#chapitre-05',
-  },
-  x: '200%',
-  yoyo: true,
-});*/
-
 gsap
   .timeline({
     scrollTrigger: {
       scrub: 0.5,
-      markers: true,
+      //markers: true,
       start: "20% 50%",
       end: "bottom 70%",
       trigger: "#chapitre-05"
     }
   })
-  .from("#chapitre-05 .chat-orange", { x: "200%" })
-  .to("#chapitre-05 .chat-orange",  { y: "-10%", duration: 2, yoyo: true})
-  .to("#chapitre-05 .chat-orange",  { x: "-500%"});
+  .from("#chapitre-05 .chat-orange", {
+    x: "200%"
+  })
+  .to("#chapitre-05 .chat-orange", {
+    y: "-10%",
+    duration: 2,
+    yoyo: true
+  })
+  .to("#chapitre-05 .chat-orange", {
+    x: "-500%"
+  });
 
 /*----- Chapitre 06 -----*/
 
-gsap.to("#chapitre-06 .personnage-mauve", { 
+gsap.to("#chapitre-06 .personnage-mauve", {
   scrollTrigger: '#chapitre6',
   duration: 4,
   y: '10%',
@@ -285,10 +316,10 @@ gsap.to("#chapitre-06 .personnage-mauve", {
   delay: 10,
 });
 
-gsap.from("#chapitre-06 .personnage-mauve", { 
+gsap.from("#chapitre-06 .personnage-mauve", {
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    //markers: true,
     start: 'top 70%',
     end: 'bottom 70%',
     trigger: '#chapitre-06',
@@ -296,10 +327,10 @@ gsap.from("#chapitre-06 .personnage-mauve", {
   x: '300%',
 });
 
-gsap.from("#chapitre-06 .chat-orange", { 
+gsap.from("#chapitre-06 .chat-orange", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: '20% 50%',
     end: 'bottom 70%',
     trigger: '#chapitre-06',
@@ -308,10 +339,10 @@ gsap.from("#chapitre-06 .chat-orange", {
   yoyo: true,
 });
 
-gsap.to("#chapitre-06 .poisson-bleu-orange", { 
+gsap.to("#chapitre-06 .poisson-bleu-orange", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: '20% 50%',
     end: 'bottom 70%',
     trigger: '#chapitre-06',
@@ -320,10 +351,10 @@ gsap.to("#chapitre-06 .poisson-bleu-orange", {
   yoyo: true,
 });
 
-gsap.to("#chapitre-06 .poisson-bleu-orange-02", { 
+gsap.to("#chapitre-06 .poisson-bleu-orange-02", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: '20% 50%',
     end: 'bottom 70%',
     trigger: '#chapitre-06',
@@ -334,10 +365,10 @@ gsap.to("#chapitre-06 .poisson-bleu-orange-02", {
 
 /*----- Chapitre 07 -----*/
 
-gsap.to("#chapitre-07 .sable", { 
+gsap.to("#chapitre-07 .sable", {
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     start: '90% bottom',
     end: 'bottom top',
     trigger: '#chapitre-07',
@@ -345,10 +376,10 @@ gsap.to("#chapitre-07 .sable", {
   y: '50%',
 });
 
-gsap.to("#chapitre-07 .sprite-sheets-plante", { 
+gsap.to("#chapitre-07 .sprite-sheets-plante", {
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     start: '96% bottom',
     end: 'bottom top',
     trigger: '#chapitre-07',
@@ -356,10 +387,10 @@ gsap.to("#chapitre-07 .sprite-sheets-plante", {
   y: '100%',
 });
 
-gsap.to("#chapitre-07 .algue-02", { 
+gsap.to("#chapitre-07 .algue-02", {
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     start: '96% bottom',
     end: 'bottom top',
     trigger: '#chapitre-07',
@@ -367,10 +398,10 @@ gsap.to("#chapitre-07 .algue-02", {
   y: '100%',
 });
 
-gsap.to("#chapitre-07 .fond-marin", { 
+gsap.to("#chapitre-07 .fond-marin", {
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     start: '50% bottom',
     end: 'bottom top',
     trigger: '#chapitre-07',
@@ -378,10 +409,10 @@ gsap.to("#chapitre-07 .fond-marin", {
   opacity: 1,
 });
 
-gsap.to("#chapitre-07 .degrade", { 
+gsap.to("#chapitre-07 .degrade", {
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     start: 'top bottom',
     end: 'bottom top',
     trigger: '#chapitre-07',
@@ -390,10 +421,10 @@ gsap.to("#chapitre-07 .degrade", {
   y: '-80%',
 });
 
-gsap.to("#chapitre-07 .chat-orange", { 
+gsap.to("#chapitre-07 .chat-orange", {
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     start: '80% bottom',
     end: 'bottom top',
     trigger: '#chapitre-07',
@@ -406,19 +437,35 @@ gsap.to("#chapitre-07 .chat-orange", {
 /*----- Chapitre 08 -----*/
 
 gsap.timeline({
-  repeat: 5,
-  scrollTrigger: {
-    markers: true,
-    toggleActions: "restart complete reverse reset",
-    trigger: "#chapitre-08"}
+    repeat: 5,
+    scrollTrigger: {
+      //markers: true,
+      toggleActions: "restart complete reverse reset",
+      trigger: "#chapitre-08"
+    }
   })
-  .from("#chapitre-08 .cercle-petit-01-morphing", { scale: 0, duration: 3.75})
-  .from("#chapitre-08 .cercle-petit-03-morphing", { scale: 0, duration: 5})
-  .to("#chapitre-08 .cercle-moyen-01-morphing", { scale: 0, duration: 3.75})
-  .to("#chapitre-08 .cercle-petit-02-morphing", { scale: 0, duration: 10} )
-  .from("#chapitre-08 .cercle-moyen-01-morphing", { scale: 0, duration: 10});
+  .from("#chapitre-08 .cercle-petit-01-morphing", {
+    scale: 0,
+    duration: 3.75
+  })
+  .from("#chapitre-08 .cercle-petit-03-morphing", {
+    scale: 0,
+    duration: 5
+  })
+  .to("#chapitre-08 .cercle-moyen-01-morphing", {
+    scale: 0,
+    duration: 3.75
+  })
+  .to("#chapitre-08 .cercle-petit-02-morphing", {
+    scale: 0,
+    duration: 10
+  })
+  .from("#chapitre-08 .cercle-moyen-01-morphing", {
+    scale: 0,
+    duration: 10
+  });
 
-gsap.from("#chapitre-08 .cercle-grand-01-morphing", { 
+gsap.from("#chapitre-08 .cercle-grand-01-morphing", {
   scrollTrigger: '#chapitre8',
   duration: 8,
   scale: 0.7,
@@ -426,7 +473,7 @@ gsap.from("#chapitre-08 .cercle-grand-01-morphing", {
   yoyo: true,
 });
 
-gsap.from("#chapitre-08 .cercle-grand-02-morphing", { 
+gsap.from("#chapitre-08 .cercle-grand-02-morphing", {
   scrollTrigger: '#chapitre8',
   duration: 10,
   scale: 0.5,
@@ -435,10 +482,10 @@ gsap.from("#chapitre-08 .cercle-grand-02-morphing", {
   delay: 2,
 });
 
-gsap.from("#chapitre-08 .chat-orange", { 
+gsap.from("#chapitre-08 .chat-orange", {
   scrollTrigger: {
     scrub: 0.5,
-    markers: true,
+    //markers: true,
     start: 'top 63%',
     end: '50% 50%',
     trigger: '#chapitre-08',
@@ -447,17 +494,18 @@ gsap.from("#chapitre-08 .chat-orange", {
   yoyo: true,
 });
 
-gsap.set("#ligne",{drawSVG:"0% 0%"});
+gsap.set("#ligne", {
+  drawSVG: "0% 0%"
+});
 
 gsap.to(
-  "#ligne",
-  {
-    drawSVG:"0% 100%", 
-    duration: 4, 
-    ease:"power1.inOut",
+  "#ligne", {
+    drawSVG: "0% 100%",
+    duration: 4,
+    ease: "power1.inOut",
     scrollTrigger: {
       scrub: 0.5,
-      markers: true,
+      //markers: true,
       start: 'top 63%',
       end: '50% 50%',
       trigger: '#chapitre-08',
@@ -472,7 +520,7 @@ let delai;
 window.addEventListener("scroll", function () {
   body.classList.add('is-scrolling');
   window.clearTimeout(delai)
-  delai =  setTimeout(function() {
+  delai = setTimeout(function () {
     body.classList.remove('is-scrolling')
-  }, 100); 
+  }, 100);
 })

@@ -42,7 +42,7 @@ ul.technique-gsap li{
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable.png), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(../img/img_arriere_plan/sable.png), url(../img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -90,7 +90,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/espace.svg);
+    background-image: url(../img/img_arriere_plan/espace.svg);
 }
 
 #chapitre-01 .cercle-grand {
@@ -206,7 +206,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/parallax_degrade.svg);
+    background-image: url(../img/img_arriere_plan/parallax_degrade.svg);
     overflow: hidden;
 }
 
@@ -261,20 +261,6 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     visibility:hidden;
   }
 
-/*#svg2 {
-    display: flex;
-    margin: 20px auto;
-    height: 400px;
-    width:400px;
-    top: 10vw;
-    left: 10vw;
-    color: var(--jaune);
-  }
-  
-  #hippo {
-    visibility:hidden;
-  }*/
-
 
 /* ----- Chapitre 03 ------ */
 
@@ -282,7 +268,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable.png), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(../img/img_arriere_plan/sable.png), url(../img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -342,7 +328,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(../img/img_arriere_plan/sable_variation.svg), url(../img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -404,7 +390,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 
 .svgCourbePoisson{
     position: absolute;
-    top: 10vh;
+    top: 40vh;
     left: -35vw;
     opacity: 0;
 }
@@ -432,7 +418,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable_variation.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(../img/img_arriere_plan/sable_variation.svg), url(../img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -509,7 +495,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/sable.svg), url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(../img/img_arriere_plan/sable.svg), url(../img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -585,7 +571,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/eau_ocean.png);
+    background-image: url(../img/img_arriere_plan/eau_ocean.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -713,7 +699,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/img_arriere_plan/espace.svg);
+    background-image: url(../img/img_arriere_plan/espace.svg);
 }
 
 #chapitre-08 .cercle-grand {
@@ -800,7 +786,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 .sprite-sheets-poisson {
     width: 50vw;
     aspect-ratio: 1/1;
-    background-image: url(/img/img_personnages/spritesheet_poisson.png);
+    background-image: url(../img/img_personnages/spritesheet_poisson.png);
     background-size: 7100% 100%;
     animation-name: poisson;
     animation-duration: 3s;
@@ -809,7 +795,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     animation-play-state: paused;
 }
 
-.body.is-scrolling .sprite-sheets-poisson {
+body.is-scrolling .sprite-sheets-poisson {
     animation-play-state: running;
 }
 
@@ -821,7 +807,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
   .sprite-sheets-plante {
     width: 50vw;
     aspect-ratio: 1/1;
-    background-image: url(/img/img_personnages/spritesheet_plante.png);
+    background-image: url(../img/img_personnages/spritesheet_plante.png);
     background-size: 2300% 100%;
     animation-name: plante;
     animation-duration: 3s;
