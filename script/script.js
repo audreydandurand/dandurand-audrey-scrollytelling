@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MorphSVGPlugin);
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(TextPlugin);
 
 /*----- Header -----*/
 
@@ -35,7 +36,6 @@ gsap.timeline({
 
 gsap.timeline({
     repeat: 5,
-
     scrollTrigger: {
      // markers: true,
      // pin: true,
@@ -81,6 +81,39 @@ gsap.timeline({
     duration: 5
   });
 
+gsap.to(".texte-chapitre-01", {
+  scrollTrigger: {
+    //markers: true,
+    start: "70% bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-01"
+  },
+  duration: 20,
+  delay: 3,
+  text: {
+    value: "  En cours de route, la fusée explose et laisse comme seul survivant l'astro-chat et celui-ci flotte dans l'espace depuis. Une planète apparait au loin et elle capte l'attention de l'astraunaute. Il se dirige vers celle-ci et s'en rapproche.",
+  }
+});
+
+/*gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "50% bottom",
+      end: "bottom top",
+      toggleActions: "restart complete reverse reset",
+      trigger: ".texte-chapitre-01"
+    }
+  })
+  .from(".texte-chapitre-01", { opacity: "0%", duration: 2 })
+  .to(".texte-chapitre-01", {
+    duration: 2,
+    delay: 4,
+    text: {
+      value: "  En cours de route, la fusée explose et laisse comme seul survivant l'astro-chat et celui-ci flotte dans l'espace depuis. Une planète apparait au loin et elle capte l'attention de l'astraunaute. Il se dirige vers celle-ci et s'en rapproche.",
+    }
+  });*/
 
 gsap.to("#chapitre-02 .parallax-eau", {
   scrollTrigger: {
@@ -161,6 +194,8 @@ gsap.to(".bulles", {
   yoyo: true,
 });
 
+/*----- Chapitre 03  -----*/
+
 gsap.to("#chapitre-03 .chat-orange", {
   scrollTrigger: {
     scrub: true,
@@ -184,26 +219,6 @@ gsap.to("#chapitre-03 .sprite-sheets-plante", {
   scaleY: 2,
   yoyo: true,
 });
-
-/*gsap
-  .timeline({
-    scrollTrigger: {
-      markers: true,
-      start: 'top 63%',
-      end: '50% 50%',
-      trigger: '#chapitre-03',
-    }
-  })
-  .to("#chapitre-03 .chat-orange", { y: "300%" })
-  .to("#chapitre-03 .chat-orange",  { x: "300%" });*/
-
-/*gsap.from("#chapitre-03 .chat-orange", { 
-  duration: 3,
-  y: '-250%',
-  repeat: -1,
-  ease: "power4.out",
-});*/
-
 
 
 /*----- Chapitre 04 -----*/

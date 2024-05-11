@@ -64,11 +64,11 @@ h1 {
 
 .header-bas-page {
     position: relative;
-    top: 50%;
+    top: 30vh;
 }
 
 .texte-defilez {
-    padding-bottom: 6%;
+    padding-bottom: 2vh;
 }
 /* ----- Main ------ */
 
@@ -183,12 +183,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 }
 
 #chapitre-01 p{
-    width: 70vw;
+    width: 50vw;
     position: absolute;
     color: var(--blanc);
-    top: 5vh;
+    top: 40vh;
+    left: 5px;
+    font-size: 30px;
     text-align: center;
-    padding-left: 15%;
 }
 
 
