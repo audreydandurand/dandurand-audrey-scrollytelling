@@ -21,7 +21,7 @@ Un fichier ne comprend pas de texte alternatif ce qui diminue l'accessibilité d
 Le fichier de l'icone ne contient pas de balise alt. Donc., je vais en créer une et inscrire la description de l'image dans sa valeur.
 
 ### Résultat
-J'ai réussi à régler ce problème en ajoutant simplement une description de l'icone dans une balise alt. Le score de l'accessibilité est passé de 73 à 89. Il a aussi fait remonter en même temps celui du SEO.
+J'ai réussi à régler ce problème en ajoutant simplement une description de l'icone dans une balise alt. 
 
 ## Problème #3
 ### Le document ne contient pas d'attribut "meta description"
@@ -31,4 +31,7 @@ Le fichier html ne contient pas l'attribut meta name description. Cela amène le
 Je vais ajouter dans le head cet attribut et inscrire un résumé de mon site web.
 
 ### Résultat
-J'ai réussi à régler le problème en ajoutant cet atribut dans la section head. Le score du SEO est passé de 82 à 91.
+J'ai réussi à régler le problème en ajoutant cet atribut dans la section head. 
+
+## Rapport projet ScrollyTelling après optimisation
+[Page Speed Insights - Rapport du 12 mai 2024, 16h17:41](https://pagespeed.web.dev/analysis/https-audrey-tim-momo-com/lliui5hlje?form_factor=mobile)
