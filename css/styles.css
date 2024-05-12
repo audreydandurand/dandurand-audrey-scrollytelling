@@ -37,6 +37,12 @@ ul.technique-gsap li{
     margin: 5px 0;
 }
 
+p {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* ----- Header ------ */
 
 header {
@@ -51,10 +57,13 @@ header {
 h1 {
     margin: 0;
     top: 0;
-    font-size: 9vw;
+    font-size: 5vw;
     padding: 3% 10px;
     text-align: center;
-    color: var(--marine)
+    color: var(--marine);
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .icone {
