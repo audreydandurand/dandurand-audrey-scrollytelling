@@ -370,7 +370,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     position: absolute;
     width:30vw;
     top: 20vh;
-    left: 70vw;
+    left: -25vw;
     border: 1px solid blue;
 }
 

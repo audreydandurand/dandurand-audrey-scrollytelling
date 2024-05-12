@@ -96,24 +96,7 @@ gsap.to(".texte-chapitre-01", {
   }
 });
 
-/*gsap
-  .timeline({
-    scrollTrigger: {
-      markers: true,
-      start: "50% bottom",
-      end: "bottom top",
-      toggleActions: "restart complete reverse reset",
-      trigger: ".texte-chapitre-01"
-    }
-  })
-  .from(".texte-chapitre-01", { opacity: "0%", duration: 2 })
-  .to(".texte-chapitre-01", {
-    duration: 2,
-    delay: 4,
-    text: {
-      value: "  En cours de route, la fusée explose et laisse comme seul survivant l'astro-chat et celui-ci flotte dans l'espace depuis. Une planète apparait au loin et elle capte l'attention de l'astraunaute. Il se dirige vers celle-ci et s'en rapproche.",
-    }
-  });*/
+/*----- Chapitre 02 -----*/
 
 gsap.to("#chapitre-02 .parallax-eau", {
   scrollTrigger: {
@@ -164,8 +147,6 @@ gsap.to("#chapitre-02 .chat-orange", {
   y: '600%',
   yoyo: true,
 });
-
-
 
 let circle = document.querySelector("#circle");
 let anim1 = gsap.to(circle, {
@@ -257,6 +238,18 @@ gsap.from("#chapitre-04 .chat-orange", {
     trigger: '#chapitre-04',
   },
   x: '600%',
+});
+
+gsap.to("#chapitre-04 .poisson-bleu-orange", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: '40% 50%',
+    end: 'bottom 70%',
+    trigger: '#chapitre-04',
+  },
+  x: '600%',
+  yoyo: true,
 });
 
 
