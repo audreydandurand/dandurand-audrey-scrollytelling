@@ -619,7 +619,7 @@ gsap.from(".texte-chapitre-08", {
     start: "top bottom",
     end: "bottom top",
     toggleActions: "restart complete reverse reset",
-    trigger: ".texte-chapitre-08"
+    trigger: ".texte-chapitre-08" 
   },
   opacity: 0,
   duration: 2,
