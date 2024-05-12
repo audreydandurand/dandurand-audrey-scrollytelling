@@ -11,6 +11,7 @@ Les fichiers PNG et JPEG sont souvent moins compressibles et rendent le processu
 Les trois fichiers sont eau_ocean.png, bulles.png et sable.png. Je vais prendre des fichiers svg à la place de ceux-ci.
 
 ### Résultat
+J'ai réussi à exporter à nouveau mes images en fichier SVG cette fois-ci et j'ai remplacé dans les liens les fichiers PNG pour les nouveaux fichiers au format web.
 
 ## Problème #2
 ### Des éléments d'image n'ont pas d'attribut [alt]
