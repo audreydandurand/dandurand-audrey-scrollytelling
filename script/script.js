@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(DrawSVGPlugin);
+//gsap.registerPlugin(MorphSVGPlugin);
+//gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(TextPlugin);
 
 /*----- Header -----*/
@@ -157,9 +157,9 @@ let anim1 = gsap.to(circle, {
     end: '40% top',
     trigger: '#chapitre-02',
   },
-  morphSVG: {
+  /*morphSVG: {
     shape: "#etoile",
-  },
+  },*/
   fill: "#FFCE51",
   yoyo: true
 });
@@ -597,7 +597,7 @@ gsap.set("#ligne", {
   drawSVG: "0% 0%"
 });
 
-gsap.to(
+/*gsap.to(
   "#ligne", {
   drawSVG: "0% 100%",
   duration: 4,
@@ -610,7 +610,7 @@ gsap.to(
     trigger: '#chapitre-08',
   },
 }
-);
+);*/
 
 gsap.from(".texte-chapitre-08", {
   scrollTrigger: {
