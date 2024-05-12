@@ -15,14 +15,14 @@ gsap.to(".icone", {
 /*----- Chapitre 01 -----*/
 
 gsap.timeline({
-    repeat: 5,
-    scrollTrigger: {
-      //markers: true,
-      pin: true,
-      toggleActions: "restart complete reverse reset",
-      trigger: "#chapitre-01"
-    }
-  })
+  repeat: 5,
+  scrollTrigger: {
+    //markers: true,
+    pin: true,
+    toggleActions: "restart complete reverse reset",
+    trigger: "#chapitre-01"
+  }
+})
   .from("#chapitre-01 .planete", {
     duration: 10,
     scale: 0
@@ -35,14 +35,14 @@ gsap.timeline({
   });
 
 gsap.timeline({
-    repeat: 5,
-    scrollTrigger: {
-     // markers: true,
-     // pin: true,
-      toggleActions: "restart complete reverse reset",
-      trigger: "#chapitre-01"
-    }
-  })
+  repeat: 5,
+  scrollTrigger: {
+    // markers: true,
+    // pin: true,
+    toggleActions: "restart complete reverse reset",
+    trigger: "#chapitre-01"
+  }
+})
   .from("#chapitre-01 .chat-orange", {
     duration: 10,
     x: "100%",
@@ -56,14 +56,14 @@ gsap.timeline({
   });
 
 gsap.timeline({
-    repeat: 5,
-    scrollTrigger: {
-     // markers: true,
-     // pin: true,
-      toggleActions: "restart complete reverse reset",
-      trigger: "#chapitre-01"
-    }
-  })
+  repeat: 5,
+  scrollTrigger: {
+    // markers: true,
+    // pin: true,
+    toggleActions: "restart complete reverse reset",
+    trigger: "#chapitre-01"
+  }
+})
   .from("#chapitre-01 .cercle-grand", {
     scale: 0.7,
     duration: 2.5
@@ -101,7 +101,7 @@ gsap.to(".texte-chapitre-01", {
 gsap.to("#chapitre-02 .parallax-eau", {
   scrollTrigger: {
     scrub: true,
-   // markers: true,
+    // markers: true,
     start: '20% 50%',
     end: 'bottom top',
     trigger: '#chapitre-02',
@@ -125,7 +125,7 @@ gsap.to("#chapitre-02 .parallax-degrade", {
 gsap.to("#chapitre-02 .parallax-etoile", {
   scrollTrigger: {
     scrub: true,
-   // markers: true,
+    // markers: true,
     start: 'top bottom',
     end: 'bottom top',
     trigger: '#chapitre-02',
@@ -163,6 +163,19 @@ let anim1 = gsap.to(circle, {
   fill: "#FFCE51",
   yoyo: true
 });
+
+gsap.from(".texte-chapitre-02", {
+  scrollTrigger: {
+    //markers: true,
+    start: "70% bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-02"
+  },
+  opacity: 0,
+  duration: 2,
+});
+
 /*----- Chapitre 03 et 4 -> Bulles -----*/
 
 gsap.to(".bulles", {
@@ -192,7 +205,7 @@ gsap.to("#chapitre-03 .chat-orange", {
 gsap.to("#chapitre-03 .sprite-sheets-plante", {
   scrollTrigger: {
     scrub: true,
-   // markers: true,
+    // markers: true,
     start: 'top 50%',
     end: 'bottom top',
     trigger: '#chapitre-03',
@@ -201,6 +214,18 @@ gsap.to("#chapitre-03 .sprite-sheets-plante", {
   yoyo: true,
 });
 
+gsap.from(".texte-chapitre-03", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-03"
+  },
+  opacity: 0,
+  duration: 2,
+});
 
 /*----- Chapitre 04 -----*/
 
@@ -222,7 +247,7 @@ gsap.to('#chapitre-04 .sprite-sheets-poisson', {
   scrollTrigger: {
     scrub: true,
     //markers: true,
-    start: 'top 50%',
+    start: '10% 50%',
     end: 'bottom top',
     trigger: '#chapitre-04',
   },
@@ -234,24 +259,36 @@ gsap.from("#chapitre-04 .chat-orange", {
     scrub: true,
     //markers: true,
     start: 'top 50%',
-    end: 'bottom top',
+    end: '75% 70%',
     trigger: '#chapitre-04',
   },
-  x: '600%',
+  x: '-600%',
 });
 
 gsap.to("#chapitre-04 .poisson-bleu-orange", {
   scrollTrigger: {
     scrub: true,
     //markers: true,
-    start: '40% 50%',
+    start: '50% 50%',
     end: 'bottom 70%',
     trigger: '#chapitre-04',
   },
-  x: '600%',
+  x: '400%',
   yoyo: true,
 });
 
+gsap.from(".texte-chapitre-04", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-04"
+  },
+  opacity: 0,
+  duration: 2,
+});
 
 /*----- Chapitre 05 -----*/
 
@@ -282,7 +319,7 @@ gsap.from("#chapitre-05 .coraux-vert-rose", {
 gsap.from("#chapitre-05 .raie", {
   scrollTrigger: {
     scrub: 0.5,
-    //arkers: true,
+    //markers: true,
     start: '20% 50%',
     end: 'bottom 70%',
     trigger: '#chapitre-05',
@@ -312,6 +349,19 @@ gsap
   .to("#chapitre-05 .chat-orange", {
     x: "-500%"
   });
+
+gsap.from(".texte-chapitre-05", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-05"
+  },
+  opacity: 0,
+  duration: 2,
+});
 
 /*----- Chapitre 06 -----*/
 
@@ -369,6 +419,34 @@ gsap.to("#chapitre-06 .poisson-bleu-orange-02", {
   },
   x: '-900%',
   yoyo: true,
+});
+
+gsap.from(".texte-chapitre-06", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-06"
+  },
+  opacity: 0,
+  duration: 2,
+});
+
+gsap.to(".dialogue-chapitre-06", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".dialogue-chapitre-06"
+  },
+  duration: 2,
+  text: {
+    value: "Bonjour Astro-chat. Je m'appelle aquata et je suis le gardien des océans. Il est maintenant l'heure pour toi de retourner dans l'espace.",
+  }
 });
 
 /*----- Chapitre 07 -----*/
@@ -442,16 +520,29 @@ gsap.to("#chapitre-07 .chat-orange", {
   x: '50%',
 });
 
+gsap.from(".texte-chapitre-07", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-07"
+  },
+  opacity: 0,
+  duration: 2,
+});
+
 /*----- Chapitre 08 -----*/
 
 gsap.timeline({
-    repeat: 5,
-    scrollTrigger: {
-      //markers: true,
-      toggleActions: "restart complete reverse reset",
-      trigger: "#chapitre-08"
-    }
-  })
+  repeat: 5,
+  scrollTrigger: {
+    //markers: true,
+    toggleActions: "restart complete reverse reset",
+    trigger: "#chapitre-08"
+  }
+})
   .from("#chapitre-08 .cercle-petit-01-morphing", {
     scale: 0,
     duration: 3.75
@@ -508,19 +599,33 @@ gsap.set("#ligne", {
 
 gsap.to(
   "#ligne", {
-    drawSVG: "0% 100%",
-    duration: 4,
-    ease: "power1.inOut",
-    scrollTrigger: {
-      scrub: 0.5,
-      //markers: true,
-      start: 'top 63%',
-      end: '50% 50%',
-      trigger: '#chapitre-08',
-    },
-  }
+  drawSVG: "0% 100%",
+  duration: 4,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    scrub: 0.5,
+    //markers: true,
+    start: 'top 63%',
+    end: '50% 50%',
+    trigger: '#chapitre-08',
+  },
+}
 );
 
+gsap.from(".texte-chapitre-08", {
+  scrollTrigger: {
+    scrub: true,
+    //markers: true,
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "restart complete reverse reset",
+    trigger: ".texte-chapitre-08"
+  },
+  opacity: 0,
+  duration: 2,
+});
+
+/*---- Sprite-sheets fonction is-scrolling ----*/
 
 const body = document.querySelector("body");
 let delai;

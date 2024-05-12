@@ -249,12 +249,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 }
 
 #chapitre-02 p{
-    width: 70vw;
+    width: 40vw;
     position: absolute;
     color: var(--blanc);
-    top: 5vh;
+    top: 25vh;
     text-align: center;
-    padding-left: 15%;
+    font-size: 30px;
+    padding-left: 2%;
 }
 
 #svg2 {
@@ -324,12 +325,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 }
 
 #chapitre-03 p{
-    width: 70vw;
+    width: 40vw;
     position: absolute;
     color: var(--marine);
-    top: 5vh;
+    top: 35vh;
     text-align: center;
-    padding-left: 15%;
+    font-size: 30px;
+    padding-left: 2%;
 }
 
 /* ----- Chapitre 04 ------ */
@@ -408,8 +410,8 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 #chapitre-04 .chat-orange {
     position: absolute;
     top: 10vh;
-    left: -20vw;
-    transform: rotate(40deg);
+    left: 100vw;
+    transform: scaleX(-1) rotate(30deg) ;
     border: 1px solid blue;
 }
 
@@ -419,6 +421,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     color: var(--marine);
     top: 5vh;
     text-align: center;
+    font-size: 30px;
     padding-left: 15%;
 }
 
@@ -496,6 +499,7 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     color: var(--marine);
     top: 5vh;
     text-align: center;
+    font-size: 30px;
     padding-left: 15%;
 }
 
@@ -566,13 +570,24 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
     border: 1px solid blue;
 }
 
-#chapitre-06 p{
+#chapitre-06 .texte-chapitre-06{
     width: 70vw;
     position: absolute;
     color: var(--marine);
     top: 5vh;
     text-align: center;
+    font-size: 30px;
     padding-left: 15%;
+}
+
+#chapitre-06 .dialogue-chapitre-06{
+    width: 30vw;
+    position: absolute;
+    color: var(--marine);
+    top: 40vh;
+    left: 40vw;
+    text-align: center;
+    font-size: 25px;
 }
 
 /* ----- Chapitre 07 ------ */
@@ -695,12 +710,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 }
 
 #chapitre-07 p{
-    width: 70vw;
+    width: 60vw;
     position: absolute;
     color: var(--marine);
-    top: 5vh;
+    top: 15vh;
     text-align: center;
-    padding-left: 15%;
+    font-size: 30px;
+    padding-left: 20%;
 }
 
 /* ----- Chapitre 08 ------ */
@@ -767,12 +783,13 @@ img { border: 1px solid rgba(218, 0, 0, 0.5); }
 }
 
 #chapitre-08 p{
-    width: 70vw;
+    width: 40vw;
     position: absolute;
     color: var(--blanc);
-    top: 5vh;
+    top: 35vh;
     text-align: center;
-    padding-left: 15%;
+    font-size: 30px;
+    padding-left: 2%;
 }
 
 .svgLigne {
