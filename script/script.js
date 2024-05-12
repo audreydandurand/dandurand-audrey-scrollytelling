@@ -437,7 +437,7 @@ gsap.from(".texte-chapitre-06", {
 gsap.to(".dialogue-chapitre-06", {
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    //markers: true,
     start: "top bottom",
     end: "bottom top",
     toggleActions: "restart complete reverse reset",
