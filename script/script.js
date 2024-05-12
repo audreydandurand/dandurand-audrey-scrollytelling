@@ -92,7 +92,7 @@ gsap.to(".texte-chapitre-01", {
   duration: 20,
   delay: 3,
   text: {
-    value: "  En cours de route, la fusée explose et laisse comme seul survivant l'astro-chat et celui-ci flotte dans l'espace depuis. Une planète apparait au loin et elle capte l'attention de l'astraunaute. Il se dirige vers celle-ci et s'en rapproche.",
+    value: "  En cours de route, la fusée explose et laisse comme seul survivant l'astro-chat et celui-ci flotte dans l'espace depuis. Une planète apparait au loin et elle capte l'attention de l'astronaute. Il se dirige vers celle-ci et s'en rapproche.",
   }
 });
 
